@@ -42,6 +42,7 @@ exam1: float = 85.5
 exam2: float = 92.0
 exam3: float = 78.0
 attendance: int = 85
+bonus_applied: bool = False
 
 # Calcular promedio
 average: float = (exam1 + exam2 + exam3) / 3
@@ -49,6 +50,7 @@ average: float = (exam1 + exam2 + exam3) / 3
 # Aplicar bonus ANTES de calcular letra
 if average >= 90 and attendance >= 95:
     average += 5
+    bonus_applied = True
 
 # Validación de asistencia
 if attendance > 100 or attendance < 0:
@@ -77,9 +79,11 @@ else:
     print("SISTEMA DE CALIFICACIONES")
     print("="*40)
     print(f"Estudiante: {student_name}")  # ✅ Faltaba esto
-    print(f"Examen 1: {exam1}")
-    print(f"Examen 2: {exam2}")
-    print(f"Examen 3: {exam3}")
+    print("-"*40)
+    print(f"Bonus aplicado: {'Si' if bonus_applied else 'no'}")
+    print(f"Examen 1: {exam1:.2f}")
+    print(f"Examen 2: {exam2:.2f}")
+    print(f"Examen 3: {exam3:.2f}")
     print(f"Promedio: {average:.2f}")
     print(f"Asistencia: {attendance}%")
     print(f"Calificación: {grade}")
