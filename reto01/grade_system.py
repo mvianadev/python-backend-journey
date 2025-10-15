@@ -1,7 +1,8 @@
 """
 🏆 RETO: Sistema de Calificaciones Escolar
 📋 Descripción
-Crea un programa que calcule la calificación final de un estudiante y determine si aprueba o reprueba la materia.
+Crea un programa que calcule la calificación final de un estudiante y
+determine si aprueba o reprueba la materia.
 
 🎯 Requisitos
 Crea el archivo: reto01/grade_system.py
@@ -67,19 +68,19 @@ else:
         grade = "D (Regular)"
     else:
         grade = "F (Reprobado)"
-    
+
     # Determinar estado (aprobado/reprobado)
     if average >= 60 and attendance >= 80:
         state = "APROBADO"
     else:
         state = "REPROBADO"
-    
+
     # Output
-    print("="*40)
+    print("=" * 40)
     print("SISTEMA DE CALIFICACIONES")
-    print("="*40)
+    print("=" * 40)
     print(f"Estudiante: {student_name}")  # ✅ Faltaba esto
-    print("-"*40)
+    print("-" * 40)
     print(f"Bonus aplicado: {'Si' if bonus_applied else 'no'}")
     print(f"Examen 1: {exam1:.2f}")
     print(f"Examen 2: {exam2:.2f}")
@@ -88,9 +89,9 @@ else:
     print(f"Asistencia: {attendance}%")
     print(f"Calificación: {grade}")
     print(f"Estado: {state}")
-    
+
     # Mensaje de tutoría
     if average < 50:
         print("Necesita tutoría")
-    
-    print("="*40)
+
+    print("=" * 40)

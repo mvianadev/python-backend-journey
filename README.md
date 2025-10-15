@@ -58,6 +58,21 @@ Hoy fue el primer día y, aunque parezca básico, me di cuenta de que arrancar b
 - `day02/access_system.py`
 - `day02/discount_calculator.py`
 
+### Reto 01 ✅ (13/10/2025)
+**Sistema de Calificaciones Escolar**
+
+**Conceptos aplicados:**
+- Variables con type hints
+- Operadores matemáticos (promedio)
+- Condicionales múltiples (if/elif/else)
+- Operadores lógicos (and)
+- Validaciones de datos
+- F-strings con formateo (.2f)
+- Lógica de negocio compleja (bonus condicional)
+
+**Archivo creado:**
+- `reto01/grade_system.py`
+
 ## 📁 Estructura del Proyecto
 ```
 python-backend-journey/

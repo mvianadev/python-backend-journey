@@ -42,11 +42,11 @@ elif age > 65:
 
 final_price = price * (1 - discount)
 
-print("="*30)
+print("=" * 30)
 print("CALCULADORA DE DESCUENTOS")
-print("="*30)
+print("=" * 30)
 print(f"Precio original: {price:.2f}$")
 print(f"Edad del cliente: {age}")
 print(f"Descuento aplicado: {discount * 100:.0f}%")
 print(f"Precio final: {final_price:.2f}$")
-print("="*30)
+print("=" * 30)

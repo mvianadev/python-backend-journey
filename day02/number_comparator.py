@@ -18,8 +18,8 @@ Code
 a: int = 10
 b: int = 20
 
-print(f"¿{a} es igual a {b}? {a == b}")
-print(f"¿{a} es diferente de {b}? {a != b}")
+print(f"¿{a} es igual a {b}? {a == b}")  # type: ignore
+print(f"¿{a} es diferente de {b}? {a != b}")  # type: ignore
 
 if a > b:
     print(f"{a} es mayor que {b}")
